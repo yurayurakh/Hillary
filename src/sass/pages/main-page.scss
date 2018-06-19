@@ -1,3 +1,30 @@
 .intro {
-    padding: 47px 0 127px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 80px 100px 30px;
+    }
+
+    &__block {
+        padding-top: 90px;
+    }
+
+    &__main-title {
+        margin: 0 0 20px;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1;
+
+        .orange-text {
+            color: $orange;
+        }
+    }
+
+    &__sub-title {
+        margin: 0 0 49px;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1;
+    }
 }

@@ -25,14 +25,6 @@ html {
     overflow: hidden;
 }
 
-section {
-    padding: 120px 0;
-
-    @media (max-width: 767px) {
-        padding: 64px 0;
-    }
-}
-
 .container {
     width: 1200px;
     margin-right: auto;
