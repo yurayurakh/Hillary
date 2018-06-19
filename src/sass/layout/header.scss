@@ -1,0 +1,36 @@
+.header {
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 30px;
+        border-bottom: 1px solid $greyB;
+    }
+
+    &__phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .phone__icon {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            margin-right: 15px;
+            background: url("../img/icon/icon-phone.svg") center no-repeat;
+        }
+
+        .phone__number {
+            display: block;
+            color: $font_color;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

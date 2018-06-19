@@ -1,0 +1,31 @@
+.nav {
+
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: $greyO5;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px dashed transparent;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $orange;
+            border-bottom-color: $orange;
+        }
+    }
+}
