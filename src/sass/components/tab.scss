@@ -1,0 +1,25 @@
+.tab {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        margin-right: 80px;
+        margin-bottom: 40px;
+        color: $font_color;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        border-bottom: 1px dashed $font_color;
+        transition: border-bottom-color .5s ease, color .2s ease;
+
+        &.active {
+            color: $orange;
+            border-bottom-color: $orange;
+        }
+
+        &:hover {
+            color: $orange;
+            border-bottom-color: $orange;
+        }
+    }
+}

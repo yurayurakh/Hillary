@@ -3,7 +3,8 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
-        padding: 0 80px 100px 30px;
+        margin-bottom: 100px;
+        padding: 0 70px 0 30px;
     }
 
     &__block {
@@ -12,19 +13,304 @@
 
     &__main-title {
         margin: 0 0 20px;
-        font-size: 36px;
-        font-weight: bold;
-        line-height: 1;
-
-        .orange-text {
-            color: $orange;
-        }
     }
 
     &__sub-title {
         margin: 0 0 49px;
-        font-size: 18px;
-        font-weight: normal;
-        line-height: 1;
+    }
+
+    &__use {
+        margin-bottom: 50px;
+    }
+}
+
+.charact {
+
+    &__wrap {
+        margin-bottom: 70px;
+        padding: 0 30px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        vertical-align: middle;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        border: 1px solid $greyB;
+        overflow: hidden;
+
+        &-text {
+            display: inline-block;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            color: $greyO5;
+            font-size: 15px;
+            text-align: center;
+            line-height: normal;
+            opacity: 1;
+            transition: opacity .4s ease;
+        }
+
+        &-img {
+            display: block;
+            opacity: 0.15;
+            transition: opacity .4s ease;
+        }
+
+        &-logo {
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            opacity: 0;
+            transition: opacity .9s ease;
+        }
+
+        &:hover {
+
+            .charact__item-text {
+                opacity: 0;
+            }
+
+            .charact__item-img {
+                opacity: 1;
+            }
+
+            .charact__item-logo {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.natural {
+
+    &__wrap {
+        display: flex;
+        margin-bottom: 70px;
+        padding: 0 30px;
+    }
+
+    &__left {
+        width: 250px;
+        height: 300px;
+    }
+
+    &__right {
+        margin-top: 30px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+
+        img {
+            margin: 0 5px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        margin: 0 20px 0 0;
+        padding: 5px 0 0;
+        list-style: none;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            color: $greyO5;
+            font-size: 14px;
+            line-height: normal;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                top: 5px;
+                left: 0;
+                border-radius: 100%;
+                border: 2px solid $orange;
+            }
+        }
+    }
+}
+
+.video {
+
+    &__wrap {
+        display: flex;
+        margin-bottom: 70px;
+        padding: 0 30px;
+    }
+}
+
+.applications {
+
+    &__wrap {
+        margin-bottom: 100px;
+        padding: 0 30px;
+    }
+
+    &__block {
+        padding: 75px 95px 60px;
+        background: url("../img/bg_applications.jpg") center top no-repeat;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__section-info {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__item {
+        display: none;
+        align-items: center;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__img {
+        margin-right: 60px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 5px 0 0;
+        list-style: none;
+
+        li {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            font-size: 15px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                top: 50%;
+                left: 0;
+                margin-top: -6px;
+                border-radius: 100%;
+                border: 2px solid $orange;
+            }
+        }
+    }
+}
+
+.makeup {
+
+    &__wrap {
+        margin-bottom: 100px;
+        padding: 0 30px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__section-info {
+        margin-bottom: 40px;
+        text-align: center;
+        line-height: normal;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 350px;
+        padding: 40px 0 30px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid $greyB;
+
+        &.makeup-molecules {
+            background: url("../img/bg_molecules.jpg") center top no-repeat;
+        }
+
+        &.makeup-pills {
+            background: url("../img/bg_pills.jpg") center top no-repeat;
+        }
+
+        &.makeup-microelements {
+            background: url("../img/bg_microelements.jpg") center top no-repeat;
+        }
+
+        &-icon {
+            margin-bottom: 40px;
+        }
+
+        &-title {
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &-text {
+            color: $greyO5;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+    }
+}
+
+.how-order {
+
+    &__wrap {
+        display: flex;
+        margin-bottom: 70px;
+        padding: 0 30px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    &__sub-title {
+        margin-bottom: 40px;
+        color: $greyO7;
+        font-size: 14px;
+        font-weight: 400;
     }
 }

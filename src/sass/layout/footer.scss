@@ -1,0 +1,32 @@
+.footer {
+
+    &__wrap {
+        padding: 30px 30px 15px;
+        border-top: 1px solid $greyB;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__copyright {
+        color: $greyO5;
+    }
+
+    &__made {
+        display: flex;
+
+        &-text {
+            margin-right: 10px;
+            color: $greyO5;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.form-horizontal {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding: 20px;
+    border: solid 1px $greyB;
+    border-radius: 5px;
+    background: #fafafa url("../img/arrow-form.png") 41% 85% no-repeat;
+
+    &__title {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: normal;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__offer {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-text {
+            display: inline-block;
+            padding: 6px 12px;
+            color: #ffffff;
+            font-size: 18px;
+            background: $orangeGradient;
+            border-radius: 5px;
+        }
+    }
+
+    &__form {
+        padding-top: 10px;
+    }
+
+    .form__line {
+        text-align: center;
+    }
+}

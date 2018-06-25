@@ -1,0 +1,32 @@
+.main-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+
+    .orange-text {
+        color: $orange;
+    }
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+
+    .orange-text {
+        color: $orange;
+    }
+}
+
+.sub-title {
+    margin: 0 0 49px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.section-info {
+    color: $greyO5;
+    font-size: 15px;
+    line-height: normal;
+}

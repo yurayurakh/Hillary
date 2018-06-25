@@ -23,10 +23,8 @@
 
         .phone__number {
             display: block;
-            color: $font_color;
             font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
+            font-weight: 700;
 
             &:hover {
                 text-decoration: underline;

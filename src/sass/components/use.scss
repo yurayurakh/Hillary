@@ -1,0 +1,35 @@
+.use {
+
+    &__title {
+        margin-bottom: 14px;
+        color: $greyO5;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__label {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 5px 14px;
+        color: #ffffff;
+        font-size: 16px;
+        border-top-left-radius: 3px;
+        background-image: $orangeGradient;
+    }
+}

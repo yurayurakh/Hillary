@@ -10,7 +10,7 @@ html {
         padding: 0;
         margin: 0 auto;
         font-size: $font_size;
-        font-family: $font, 'Helvetica', 'Arial', sans-serif;
+        font-family: $font;
         line-height: $line_height;
         color: $font_color;
         background: $bg_color;
@@ -19,6 +19,26 @@ html {
 
 * {
     box-sizing: border-box;
+}
+
+a, button, input {
+    outline: none;
+    font-family: $font;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    transition: color .3s,
+    background-color .3s,
+    border-color .3s,
+    box-shadow .3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
 }
 
 .wrapper {
