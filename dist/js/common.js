@@ -34,10 +34,11 @@ var $W = $(window),
             }
         });
 
-        $('#owl-mass-media').owlCarousel({
+        $('#owl-reviews').owlCarousel({
             loop: true,
-            margin: 39,
-            items: 3,
+            margin: 30,
+            items: 2,
+            slideBy: 2,
             nav: true,
             navText: ['', ''],
             responsive: {
@@ -49,7 +50,7 @@ var $W = $(window),
                     items: 2
                 },
                 992: {
-                    items: 3
+                    items: 2
                 }
             }
         });
@@ -67,8 +68,7 @@ var $W = $(window),
             $("#"+dataTab).fadeIn().css("display", "flex");
         });
 
-        // Youtube video
-        if ( $(".js-modal-youtube").length ) youtubePlugIn();
+        youtubePlugIn();
 
         function youtubePlugIn() {
             var tag = document.createElement('script');
@@ -79,16 +79,16 @@ var $W = $(window),
             window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
             function onYouTubeIframeAPIReady() {
-                //console.log("onYouTubeIframeAPI Ready");
+                console.log("onYouTubeIframeAPI Ready");
             }
         }
 
         function popBoxStart(popId){
             var $thisPopbox = $( popId ),
-                $popYoutube = $thisPopbox.find(".js-modal-youtube"),
+                $popYoutube = $thisPopbox.find(".js-youtube-block"),
                 youtubeSource = $popYoutube.data("yt-source"),
-                widthPlayer = 640,
-                heightPlayer = 360,
+                widthPlayer = 660,
+                heightPlayer = 370,
                 youtubePlayer;
 
             if(screen.width < 768){
@@ -101,7 +101,7 @@ var $W = $(window),
                 width: widthPlayer,               // Player width (in px)
                 height: heightPlayer,              // Player height (in px)
                 playerVars: {
-                    autoplay: 1,        // Auto-play the video on load
+                    autoplay: 0,        // Auto-play the video on load
                     controls: 1,        // Show pause/play buttons in player
                     showinfo: 0,        // Hide the video title
                     modestbranding: 0,  // Hide the Youtube Logo
@@ -121,25 +121,12 @@ var $W = $(window),
                     youtubePlayer = "";
                 }
             }
-
-            $(".close").click(function () {
-                stopPlay();
-            });
-
-            $(".modal").click(function(e){
-                stopPlay();
-            });
         }
 
-        // Popup
-        $(".js-modal").click(function () {
+        setTimeout(function () {
+            popBoxStart( "#block-youtube");
+        }, 1000);
 
-            var $this =  $(this),
-                modalPop = $this.data("pop");
-
-            popBoxStart( "#" + modalPop );
-            $("#" + modalPop).css("display","block");
-        });
 
         $(".close").click(function () {
             $(".modal").css("display","none");
