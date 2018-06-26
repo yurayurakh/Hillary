@@ -3,7 +3,6 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 100px;
         padding: 0 70px 0 30px;
     }
 
@@ -25,10 +24,15 @@
 }
 
 .charact {
+    padding-top: 60px;
+    margin-bottom: 50px;
+
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg3.jpg") 0 -120px no-repeat;
+    }
 
     &__wrap {
-        margin-bottom: 70px;
-        padding: 0 30px;
+        padding: 30px 30px 0 ;
     }
 
     &__title {
@@ -43,11 +47,13 @@
 
     &__item {
         position: relative;
+        height: 150px;
         vertical-align: middle;
         margin-bottom: 25px;
-        border-radius: 5px;
-        border: 1px solid $greyB;
+        border-radius: 8px;
         overflow: hidden;
+        box-shadow: 0 0 1px rgba(0,0,0,.3);
+        transition: box-shadow .3s ease;
 
         &-text {
             display: inline-block;
@@ -84,6 +90,7 @@
         }
 
         &:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
 
             .charact__item-text {
                 opacity: 0;
@@ -108,8 +115,7 @@
 
     &__wrap {
         display: flex;
-        margin-bottom: 70px;
-        padding: 0 30px;
+        padding: 30px 30px 0 ;
     }
 
     &__img {
@@ -170,11 +176,14 @@
 
 .video {
 
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg5.jpg") left bottom no-repeat;
+    }
+
     &__wrap {
         display: flex;
         align-items: center;
-        margin-bottom: 70px;
-        padding: 0 30px;
+        padding: 30px 30px 0 ;
     }
 
     &__block {
@@ -184,10 +193,14 @@
 }
 
 .applications {
+    padding-top: 100px;
+
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg6.jpg") right top no-repeat;
+    }
 
     &__wrap {
-        margin-bottom: 100px;
-        padding: 0 30px;
+        padding: 30px 30px 0 ;
     }
 
     &__block {
@@ -245,10 +258,16 @@
 }
 
 .reviews {
+    padding-top: 80px;
+
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg7.jpg") left top no-repeat,
+                    url("../img/bg/bg8.jpg") right 170px no-repeat;
+    }
 
     &__wrap {
-        margin-bottom: 100px;
-        padding: 0 30px;
+        margin-bottom: 70px;
+        padding: 30px 30px 0 ;
     }
 
     &__title {
@@ -261,6 +280,7 @@
     }
 
     &__item {
+        height: 230px;
         padding: 25px 13px 16px;
         border: solid 1px $greyB;
         border-radius: 5px;
@@ -295,11 +315,12 @@
 
             &__stars {
 
-                img {
+                &-rating {
                     display: inline-block;
                     width: 16px;
                     height: 16px;
                     margin-right: 3px;
+                    background: url("../img/icon/icon-star.svg") center no-repeat;
                 }
             }
         }
@@ -386,9 +407,12 @@
 
 .makeup {
 
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg9.jpg") right 150px no-repeat;
+    }
+
     &__wrap {
-        margin-bottom: 100px;
-        padding: 0 30px;
+        padding: 30px 30px 0 ;
     }
 
     &__title {
@@ -445,11 +469,16 @@
 }
 
 .how-order {
+    padding-top: 70px;
+
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg10.jpg") left top no-repeat;
+    }
 
     &__wrap {
         display: flex;
-        margin-bottom: 70px;
-        padding: 0 30px;
+        margin-bottom: 40px;
+        padding: 30px 30px 0 ;
     }
 
     &__title {

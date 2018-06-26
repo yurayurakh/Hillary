@@ -61,7 +61,7 @@ var $W = $(window),
             window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
             function onYouTubeIframeAPIReady() {
-                //console.log("onYouTubeIframeAPI Ready");
+                console.log("onYouTubeIframeAPI Ready");
             }
         }
 
@@ -130,9 +130,6 @@ var $W = $(window),
                 $('html,body').stop().animate({ scrollTop: target.offset().top }, 1000);
             }
         });
-
-        // Phone mask
-        $(".tel").mask("+38 (099) 999-99-99");
 
     });
 

@@ -43,6 +43,18 @@ h1,h2,h3,h4,h5,h6 {
 
 .wrapper {
     overflow: hidden;
+
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg1.jpg") left top no-repeat,
+                    url("../img/bg/bg2.jpg") right top no-repeat,
+                    url("../img/bg/bg11.jpg") right bottom no-repeat;
+    }
+}
+
+.cocount {
+    @media (min-width: 1800px) {
+        background: url("../img/bg/bg4.jpg") right center no-repeat;
+    }
 }
 
 .container {
