@@ -8,30 +8,12 @@ var $W = $(window),
     $D.ready(function() {
 
         // Sliders
-        $('#owl-release').owlCarousel({
+        $('#owl-certificates').owlCarousel({
+            loop: true,
             margin: 0,
             items: 1,
             nav: true,
             navText: ['', '']
-        });
-
-        $('#owl-events').owlCarousel({
-            margin: 0,
-            items: 3,
-            nav: true,
-            navText: ['', ''],
-            responsive: {
-
-                0:{
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                }
-            }
         });
 
         $('#owl-reviews').owlCarousel({
