@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hillary</title>
+    <title>Hillary - Натуральная Косметика</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Link Owl Carousel2 -->
     <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">
 
-    <!-- jQuery -->
-    <script src="lib/jquery/jquery.min.js"></script>
-
     <!-- Fancybox 3-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
     <!-- Main style -->
     <link rel="stylesheet" href="css/style.css">
@@ -126,8 +124,8 @@
                             <div class="form-horizontal__form">
                                 <form action="" class="form" method="POST">
                                     <div class="form__line">
-                                        <input type="text" class="form__input" placeholder="Ваше имя">
-                                        <input type="text" class="form__input tel" placeholder="Номер телефона">
+                                        <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+                                        <input type="text" class="form__input tel" name="phone" placeholder="Номер телефона">
                                     </div>
                                     <div class="form__line">
                                         <input type="submit" class="form__btn btn btn--red" value="Купить сейчас">
@@ -305,10 +303,10 @@
                         <div class="form-vertical__form">
                             <form action="" class="form" method="POST">
                                 <div class="form__line">
-                                    <input type="text" class="form__input" placeholder="Ваше имя">
+                                    <input type="text" class="form__input" name="name" placeholder="Ваше имя">
                                 </div>
                                 <div class="form__line">
-                                    <input type="text" class="form__input tel" placeholder="Номер телефона">
+                                    <input type="text" class="form__input tel" name="phone" placeholder="Номер телефона">
                                 </div>
                                 <div class="form__line">
                                     <input type="submit" class="form__btn btn btn--red" value="Купить">
@@ -677,7 +675,7 @@
                         <a href="https://makeup.com.ua/product/402031/" target="_blank" class="reviews__btn">
                             Посмотреть все отзывы
                         </a>
-                        <a role="button" class="btn btn--red">
+                        <a role="button" class="btn btn--red js-modal" data-pop="pop-order">
                             Купить сейчас
                         </a>
                     </div>
@@ -766,13 +764,13 @@
                             </div>
                             <div class="certificates__carousel owl-carousel" id="owl-certificates">
                                 <div class="certificates__item">
-                                    <a href="img/certificates1.bmp" data-fancybox="gallery" class="certificates__link">
-                                        <img src="img/certificates1.bmp" class="certificates-img" alt="certificates1">
+                                    <a href="img/certificates1.jpg" data-fancybox="gallery" class="certificates__link">
+                                        <img src="img/certificates1.jpg" class="certificates-img" alt="certificates1">
                                     </a>
                                 </div>
                                 <div class="certificates__item">
-                                    <a href="img/certificates2.bmp" data-fancybox="gallery" class="certificates__link">
-                                        <img src="img/certificates2.bmp" class="certificates-img" alt="certificates2">
+                                    <a href="img/certificates2.jpg" data-fancybox="gallery" class="certificates__link">
+                                        <img src="img/certificates2.jpg" class="certificates-img" alt="certificates2">
                                     </a>
                                 </div>
                             </div>
@@ -843,8 +841,8 @@
                             <div class="form-horizontal__form">
                                 <form action="" class="form" method="POST">
                                     <div class="form__line">
-                                        <input type="text" class="form__input" placeholder="Ваше имя">
-                                        <input type="text" class="form__input tel" placeholder="Номер телефона">
+                                        <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+                                        <input type="text" class="form__input tel" name="phone" placeholder="Номер телефона">
                                     </div>
                                     <div class="form__line">
                                         <input type="submit" class="form__btn btn btn--red" value="Купить сейчас">
@@ -896,7 +894,7 @@
                                 </div>
                                 <div class="contact__text">
                                     Оптовые заказы: <br/>
-                                    <strong>+38 (063) 7000889</strong>
+                                    <a href="tel:+38 (063) 7000889"><strong>+38 (063) 7000889</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -906,7 +904,7 @@
                             Сделано в
                         </div>
                         <div class="footer__made-icon">
-                            <a href="http://thewwwave.com" class="footer__made-link">
+                            <a href="http://thewwwave.com" target="_blank" class="footer__made-link">
                                 <img src="img/wave-studio.svg" alt="wave-studio">
                             </a>
                         </div>
@@ -921,6 +919,69 @@
         </div>
     </footer>
 </div>
+
+<!-- Modal Video Popup -->
+<div id="pop-order" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal__block">
+            <div class="form-vertical">
+                <div class="form-vertical__info">
+                    <div class="form-vertical__title">
+                        Закажите онлайн натуральное кокосовое <br/>
+                        масло Новой Поштой <span>ВСЕГО за</span>
+                    </div>
+                    <div class="form-vertical__offer">
+                        <span class="form-horizontal__offer-text">
+                            250 мл -  194,99 грн
+                        </span>
+                    </div>
+                    <div class="form-vertical__offer">
+                        <span class="form-horizontal__offer-text">
+                            500 мл -  284,99 грн
+                        </span>
+                    </div>
+                </div>
+                <div class="form-vertical__form">
+                    <form action="" class="form" method="POST">
+                        <div class="form__line">
+                            <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__line">
+                            <input type="text" class="form__input tel" name="phone" placeholder="Номер телефона">
+                        </div>
+                        <div class="form__line">
+                            <input type="submit" class="form__btn btn btn--red" value="Купить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Video Popup -->
+<div id="pop-success" class="modal modal__success">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal__block">
+            <div class="success__block">
+                <p>Спасибо за заявку! </p>
+                <span>Наш менеджер свяжется с Вами!</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="lib/jquery/jquery.min.js"></script>
+
+<!-- Fancybox 3-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
 <!-- Owl Carousel2 -->
 <script src="lib/OwlCarousel2/dist/owl.carousel.min.js"></script>

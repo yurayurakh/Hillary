@@ -109,14 +109,22 @@ var $W = $(window),
             popBoxStart( "#block-youtube");
         }, 1000);
 
+        // Popup
+        $(".js-modal").click(function () {
+
+            var $this =  $(this),
+                modalPop = $this.data("pop");
+
+            $("#" + modalPop).fadeIn("fast");
+        });
 
         $(".close").click(function () {
-            $(".modal").css("display","none");
+            $(".modal").fadeOut("fast");
         });
 
         $(".modal").click(function(e){
             if(e.target === this) {
-                $(this).css("display","none");
+                $(this).fadeOut("fast");
             }
         });
 

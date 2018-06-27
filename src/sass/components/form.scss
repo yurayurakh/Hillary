@@ -12,6 +12,10 @@
         border-radius: 3px;
         border: solid 1px $greyB;
 
+        &.has-error {
+            border-color: #ec2913;
+        }
+
         &::placeholder {
             opacity: 0.5;
         }
