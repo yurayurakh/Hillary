@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     width: 800px;
-    padding: 20px;
     border: solid 1px $greyB;
     border-radius: 5px;
     background: url("../img/arrow-form.png") 41% 85% no-repeat;
@@ -15,6 +14,10 @@
         span {
             font-weight: 700;
         }
+    }
+
+    &__info {
+        padding: 20px 0 20px 20px ;
     }
 
     &__offer {
@@ -35,7 +38,7 @@
     }
 
     &__form {
-        padding-top: 10px;
+        padding: 30px 20px 20px 0;
     }
 
     .form__line {

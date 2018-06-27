@@ -32,3 +32,59 @@
         }
     }
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .header {
+
+        &__nav {
+
+            .nav__item {
+                margin-right: 20px;
+
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header {
+
+        &__nav {
+
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__logo {}
+
+        &__nav {
+
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .header {
+
+        &__wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

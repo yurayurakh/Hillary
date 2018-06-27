@@ -7,14 +7,6 @@ var $W = $(window),
 
     $D.ready(function() {
 
-        // Sliders
-        $('#owl-certificates').owlCarousel({
-            loop: true,
-            margin: 0,
-            items: 1,
-            nav: true,
-            navText: ['', '']
-        });
 
         $('#owl-reviews').owlCarousel({
             loop: true,
@@ -36,6 +28,17 @@ var $W = $(window),
                 }
             }
         });
+
+        if(screen.width > 1199 || screen.width < 768){
+            // Sliders
+            $('#owl-certificates').owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 1,
+                nav: true,
+                navText: ['', '']
+            });
+        }
 
 
         $('.js-tab-link').on('click', function () {
