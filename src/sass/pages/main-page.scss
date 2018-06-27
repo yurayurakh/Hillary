@@ -52,6 +52,7 @@
         margin-bottom: 25px;
         border-radius: 8px;
         overflow: hidden;
+        background: rgba(255,255,255,.1);
         box-shadow: 0 0 1px rgba(0,0,0,.3);
         transition: box-shadow .3s ease;
 
@@ -74,10 +75,8 @@
 
         &-img {
             display: block;
-
-            &.hover {
-                display: none;
-            }
+            opacity: .1;
+            transition: opacity .2s ease;
         }
 
         &-logo {
@@ -97,11 +96,7 @@
             }
 
             .charact__item-img {
-                display: none;
-
-                &.hover {
-                    display: block;
-                }
+                opacity: 1;
             }
 
             .charact__item-logo {

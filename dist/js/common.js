@@ -8,11 +8,12 @@ var $D = $(document),
         youtubePlugIn();
 
         function youtubePlugIn() {
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+            var tag = document.createElement('script'),
+                firstScriptTag = document.getElementsByTagName('script')[0];
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
             window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
             function onYouTubeIframeAPIReady() {}
@@ -103,8 +104,7 @@ var $D = $(document),
         // Popup
         $(".js-modal").click(function () {
 
-            var $this =  $(this),
-                modalPop = $this.data("pop");
+            var modalPop = $(this).data("pop");
 
             $("#" + modalPop).fadeIn("fast");
         });
@@ -122,8 +122,7 @@ var $D = $(document),
         //Scroll
         $('.js-scroll').on('click', function() {
 
-            var $this = $(this),
-                target = $('[data-scroll-target="' + $this.attr('data-scroll') + '"]');
+            var target = $('[data-scroll-target="' + $(this).attr('data-scroll') + '"]');
 
             if(target.length) {
                 $HB.stop().animate({ scrollTop: target.offset().top }, 1000);
