@@ -83,6 +83,19 @@
     .header {
 
         &__wrap {
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        &__logo {
+            margin: 10px 40px 0;
+        }
+
+        &__phone {
+            margin-top: 10px
+        }
+
+        &__wrap {
             padding-left: 0;
             padding-right: 0;
         }

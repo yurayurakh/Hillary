@@ -128,10 +128,17 @@
     }
 
     &__title {
-        display: flex;
-        align-items: center;
         margin-bottom: 30px;
-        font-size: 20px;
+
+        &-desktop {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        &-mobile {
+            display: none;
+        }
 
         img {
             margin: 0 5px;
@@ -670,6 +677,17 @@
         &__right {
             margin: 0;
         }
+
+        &__title {
+
+            &-desktop {
+                display: none;
+            }
+
+            &-mobile {
+                display: inline-block;
+            }
+        }
     }
 
     .video {
@@ -876,6 +894,17 @@
             margin: 0;
         }
 
+        &__title {
+
+            &-desktop {
+                display: none;
+            }
+
+            &-mobile {
+                display: inline-block;
+            }
+        }
+
         &__block {
             flex-wrap: wrap;
 
@@ -999,13 +1028,7 @@
             margin-right: 0;
 
             .certificates__carousel {
-                display: flex;
-                justify-content: center;
-                width: auto;
-            }
-
-            .certificates__item {
-                margin: 0 20px;
+                margin: 0 auto;
             }
         }
 
@@ -1027,6 +1050,8 @@
             flex-direction: column;
             background: none;
             width: auto;
+            max-width: 350px;
+            margin: 0 auto;
 
             .form-horizontal__info {
                 padding: 20px;
